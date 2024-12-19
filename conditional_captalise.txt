@@ -1,0 +1,8 @@
+def preLetterCase(s, letter):
+    index = s.find(letter)
+    
+    if index == -1:
+        return s
+    
+    return s[:index].lower() + s[index:].upper()
+
